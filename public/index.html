@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/lib/angular/angular.min.js"></script>
+    <script src="./js/lib/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <!--  -->
+    <title>Document</title>
+</head>
+
+<body ng-app="app">
+    <a ui-sref="hello">hello</a><br>
+    <a ui-sref="about">about</a><br>
+    <ui-view></ui-view>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/components/home/home.routes.js"></script>
+    <script src="./js/components/about/about.controller.js"></script>
+    <script src="./js/components/about/about.route.js"></script>
+    <script src="./js/directives/customDateInput/customDateInput.controller.js"></script>
+    <script src="./js/directives/customDateInput/customDateInput.directive.js"></script>
+    <script src="./js/directives/customValidation/customValidation.directive.js"></script>
+    <script src="./js/directives/customValidation/customValidator.factory.js"></script>
+</body>
+
+</html>

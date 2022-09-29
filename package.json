@@ -1,0 +1,22 @@
+{
+  "name": "ang_ui-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "cpx \"node_modules/{angular/angular,@uirouter/angularjs/release/angular-ui-router}.min.js\" public/js/lib -C",
+    "start": "http-server -p 4200"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "http-server": "^13.0.0"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.30",
+    "angular": "^1.8.3"
+  }
+}
