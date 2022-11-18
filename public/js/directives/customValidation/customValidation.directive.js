@@ -68,7 +68,6 @@
                 var validations = $scope.$eval(attrs.customValidation);
                 var triggers = [];
                 var target = getTarget(elem);
-                debugger;
                 var validationHandler = function (value, dispatchedBy) {
                         /*
                         @type validity: [<Object>{<String name>, <Boolan isValid<Func(value)>>, <Object formattedValue>, notifiers:[<Object>]}]

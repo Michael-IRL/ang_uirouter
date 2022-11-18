@@ -6,7 +6,8 @@
     let helloState = {
       name: 'hello',
       url: '/hello',
-      template: '<h3>hello world!</h3>',
+      controller :'HomeController',
+      templateUrl: 'js/components/home/home.html',
     };  
 
     $stateProvider.state(helloState);
@@ -14,6 +15,8 @@
   }
 
   angular
-    .module('app.home.routes',[])
+    .module('app.home.routes',[
+      'app.home.controller'
+    ])
     .config(routerState);
 })()

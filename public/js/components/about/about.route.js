@@ -6,7 +6,7 @@
     let aboutState = {
       name: 'about',
       url: '/about',
-      comment: 'AboutController',
+      controller: 'AboutController',
       templateUrl: 'js/components/about/about.html',
     };
     $stateProvider.state(aboutState);

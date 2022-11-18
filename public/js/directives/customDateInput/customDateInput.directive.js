@@ -8,7 +8,7 @@
         return {
             restrict: 'A',
             require: 'ngModel',
-            replace: true,
+            replace: false,
             scope: {
                 model: '=ngModel',
                 required: '=?',
@@ -17,12 +17,8 @@
             },
             controller: 'CustomDateInputController',
             controllerAs: 'customDate',
-            templateUrl: 'js/directives/customDateInput/template.html',
-            /*template:`<div class="form-input form-input--customDate">
-    <input type="tel" class="form-input form-input--dd" autocomplete="off" id="{{customDate.elementName}}Day" scroll-to-element placeholder="DD" ng-model="day" maxlength="2" ng-change="verifyDay(day)" ng-trim="false">
-    <input type="tel" class="form-input form-input--mm" autocomplete="off" id="{{elementName}}Month" scroll-to-element placeholder="MM" ng-model="month" maxlength="2" ng-change="verifyMonth(month)" ng-trim="false">
-    <input type="tel" class="form-input form-input--yyyy" autocomplete="off" id="{{elementName}}Year" scroll-to-element placeholder="YYYY" ng-model="year" maxlength="4" ng-change="verifyYear(year)" ng-trim="false">
-</div>`,*/
+            /*templateUrl: 'js/directives/customDateInput/template.html',*/
+            template:"<div class=\"form-input form-input--customDate\">\r\n  <input type=\"tel\" class=\"form-input form-input--dd\" autocomplete=\"off\" id=\"{{elementName}}Day\" scroll-to-element placeholder=\"DD\" ng-model=\"day\" maxlength=\"2\" ng-change=\"verifyDay(day)\" ng-trim=\"false\">\r\n  <input type=\"tel\" class=\"form-input form-input--mm\" autocomplete=\"off\" id=\"{{elementName}}Month\" scroll-to-element placeholder=\"MM\" ng-model=\"month\" maxlength=\"2\" ng-change=\"verifyMonth(month)\" ng-trim=\"false\">\r\n  <input type=\"tel\" class=\"form-input form-input--yyyy\" autocomplete=\"off\" id=\"{{elementName}}Year\" scroll-to-element placeholder=\"YYYY\" ng-model=\"year\" maxlength=\"4\" ng-change=\"verifyYear(year)\" ng-trim=\"false\">\r\n</div>",
             link: function (scope, element, attrs, modelCtrl){                
                     scope.elementName = attrs.name;
                     scope.modelCtrl = modelCtrl;                              
