@@ -8,6 +8,7 @@
       url: '/hello',
       controller :'HomeController',
       templateUrl: 'js/components/home/home.html',
+      
     };  
 
     $stateProvider.state(helloState);

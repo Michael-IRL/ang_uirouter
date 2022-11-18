@@ -1,8 +1,8 @@
 (function(){
   'use strict';
-  runFunction.$inject = ['$rootScope','$state']
+  runFunction.$inject = ['$rootScope','$state','$stateParams']
 
-  function runFunction($rootScope, $state){
+  function runFunction($rootScope, $state, $stateParams){
     $rootScope.reloadPage = reloadPage
 
     function reloadPage() {
@@ -11,7 +11,6 @@
       $state.go($state.current, $stateParams, { reload: true });      
     }
   }
-
 
   angular
   .module('app', [

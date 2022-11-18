@@ -4,6 +4,7 @@
   function HomeController($window,$rootScope,$scope){
 
     this.$onInit = function onInit() {
+      console.log('init called')
       if(!$rootScope.paymentHandler){
         $rootScope.paymentHandler = true;
         $window.addEventListener("message",paymentHandler);
